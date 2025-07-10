@@ -14,7 +14,7 @@ log_message() {
 
 # Stopp Apache Webserver
 # log_message "Webserver wird gestoppt."
-# sudo systemctl stop apache2
+sudo systemctl stop apache2
 
 # Check, ob Apache läuft
 if systemctl status apache2 | grep "inactive (dead)" > /dev/null
